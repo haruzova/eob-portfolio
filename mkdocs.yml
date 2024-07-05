@@ -1,0 +1,43 @@
+site_name: Portfolio Site
+site_url: https://haruzova.github.io/eob-pf/
+
+theme: 
+
+  favicon: assets/rainbow.gif
+  logo: assets/rainbow.gif
+  
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - header.autohide
+
+plugins:
+  - search
+  - ezlinks:
+      wikilinks: true
+      reference_links: true
+  
+
+extra_css:
+  - stylesheets/extra.css
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      line_spans: __span
